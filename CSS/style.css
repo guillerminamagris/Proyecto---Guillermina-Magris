@@ -1,28 +1,21 @@
+/* font-family: 'Poppins', sans-serif; */
 
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-
+    margin: 0px;
+    padding: 0px;
+    
 }
 
-
-header nav ul li a, header nav ul li{
-   text-decoration: none;
-   color: lightgoldenrodyellow;
-   opacity: 0.80;
-   font-size: 20px;
-   font-weight: 510;
-   text-align: center;
-   font-family: 'Inter', sans-serif;
-   font-weight: 500;
-       
-
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
-header nav ul li{
-    align-items: center;
+main{
+    padding: 20px;
+}
 
+a{
+   text-decoration: none; 
 }
 
 
@@ -30,490 +23,131 @@ ul{
     list-style: none;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    height: 70px;
-    
-}
-
-header img{
-    height: 70px;
-}
-
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-}
-
-
-nav{
-    width: 100% ;
+.header{
     background-color: cadetblue;
-    opacity: 0.80;
-
-}
-
-
-
-#index_mainhome{
-    background-image: url(../IMAGES/Home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 100vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    height: 200px;
-}   
-
-#index_mainprojects{
-    background-image: url(../IMAGES/manos-ingeniero-que-trabajan-blueprint-concepto-construccion-herramientas-ingenieria-vintage-efecto-filtro-retro-tono-enfoque-suave-enfoque-selectivo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 100vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    height: 200px;
-}
-
-
-
-
-#index_maincareers{
-    background-image: url(../IMAGES/Varias/colegas-dando-golpe-puno.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 300px;
-
-
-}
-
-.work-with{
-    display: flex;
-    text-align: center;
-}
-
-
-
- 
-main ul li{
-    display: flex;
-    justify-content:left;
-    flex-direction: column;
-    background-color: darkkhaki;
-    font-size: 15px;
-    font-weight: 600    ;
-   
-
-}
-
-main p{
-    display: flex;
-    justify-content: row;
-    font-size: 20px;
-    font-weight: 600px;
-       
-}
-
-main h1{
-    margin: 0px;
-}
-
-section div img{
+    box-shadow: 1px 1px 5px 0px grey;
+    position: sticky;
+    top: 0;
     width: 100%;
-    overflow:visible;
-}
-
-
-.mainhome{
     display: flex;
-    height: 150px;
-    width: 150px;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
+}
+
+.logo{
+    display: inline-block;
+    color: lightgoldenrodyellow;
+    font-size: 40px;
+    margin-left: 10px;
 
 }
 
-
-.imagenes{
-    width: 100vw;
-   height: auto;
-   
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: cadetblue;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
 }
 
-.titulos{
-    color: cadetblue;
-    opacity: 0.85;
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+.menu a{
+    display: block;
+    padding: 30px;
+    color: black;
+
+
 }
 
-.titulos2{
-    font-size: 35px;
-    text-align: center;
-    color: cadetblue;
-    opacity: 0.85;
+.menu a:hover{
     background-color: lightgoldenrodyellow;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
 }
 
-.titulos3{
-    font-size: 25px;
-    color: cadetblue;
-    opacity: 0.85;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 15px 10px;
 }
 
-.titulos4{
-    font-size: 18px;
-    color: cadetblue;
-    opacity: 0.85;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-
+.hamb-line{
+    background-color: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
 }
 
-.archiplus{
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    text-align: start;    
-}
-
-.parrafos1{
-    text-align: left;
-    font-size: 18px;
-    line-height: 1.4;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-}
-
-.parrafosC{
-    text-align: left;
-    font-size: 18px;
-    line-height: 1.4;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-}
-
-
-.imagenmail{
-   height: 110px;
-   width: 110px;
-}
-
-.imagenwp{
-    height: 120px;
-    width: 120px;
- }
-
-.imagenins{
-    height: 110px;
-    width: 110px;
- }
-
-
-
-.div-projects{
-    border: 3px cadetblue solid;
+.hamb-line::before, 
+.hamb-line::after{
+    background-color: lightgoldenrodyellow;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
     width: 100%;
-    margin: 5px;
-
- }
-
-
-.h2-about1{
-    grid-area: titulo1;
-    font-size: 30px;
-    color: cadetblue;
-    opacity: 0.85;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
 }
 
-.div-president1{
-    grid-area: president1;
+.hamb-line::before{
+    top: 5px;
 }
 
-.div-president2{
-    grid-area: president2;
+.hamb-line::after{
+    top: -5px;
 }
 
-.h2-about2{
-    grid-area: titulo2;
-    font-size: 30px;
-    color: cadetblue;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+.side-menu{
+    display: none;
 }
 
-.div-principal1{
-    grid-area: principal1 ;
+.side-menu:checked ~ nav{
+    max-height: 100%;
 }
 
-.div-principal2{
-    grid-area: principal2;
+.side-menu:checked ~ .hamb .hamb-line{
+    background-color: transparent;
 }
 
-#grilla-about{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 50px 1100px 50px 1100px;
-    column-gap: 40px;
-    row-gap: 40px;
-    grid-template-areas:
-    "titulo1 titulo1"
-    "president1 president2"
-    "titulo2 titulo2"
-    "principal1 principal2"
-    ;
+.side-menu:checked ~ .hamb .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
 }
 
-
-.titulo-careers{
-    font-size: 25px;
-    color:rgb(54, 53, 53);
-    opacity: 0.85;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-}
-
-.applynow1{
-    border: solid 2px plum;
-    background-color:plum;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 5px;
-    box-shadow: 1px 3px 3px grey;
-    
-}
-
-.applynow{
-    border: solid 2px lightgoldenrodyellow;
-    background-color:lightgoldenrodyellow;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 5px;
-    box-shadow: 1px 3px 3px grey;
-    height: 100px;
-    width: 200px;
-    
-}
-
-.div-iphone{
-    grid-area: imgphone;
-}
-
-.div-phone{
-    grid-area: phone;
-}
-
-.div-iemail{
-    grid-area: imgemail;
-}
-
-.div-email{
-    grid-area: email;
-}
-
-.div-iinst{
-    grid-area: imginst;
-}
-
-.div-inst{
-    grid-area: instagram;
-}
-
-#grilla_maincontact{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 130px 100px;
-    row-gap: 60px;
-    column-gap: 60px;
-    grid-template-areas: 
-    "imgphone imgemail imginst"
-    "phone email instagram";
-    justify-items: center;
-    align-items: center;
-    padding: 0px 0px 200px 0px;
-    
-}
-
-.f-contact{
-    border: solid 2px lightgray;
-    background-color:rgb(252, 252, 252);
-    box-shadow: 1px 3px 3px grey;
-    height: 30px;
-    width: 300px;
+.side-menu:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
 
 }
 
-.div-imagen{
-    grid-area: imagen;
-    height: 470px;
-    width: 370px;
-}
-
-.div-firstname{
-    grid-area: first;
-}
-
-.div-lastname{
-    grid-area: last;
-}
-
-.div-emailc{
-    grid-area: emailc;
-
-}
-
-.div-phonec{
-    grid-area: phonec;
-}
-
-.div-submit{
-    grid-area: submit;
-    border: solid 2px plum;
-    background-color:plum;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 5px;
-    box-shadow: 1px 3px 3px grey;
-    width: 80px;
-
-}
-
-#grilla_sectioncontact{
-    display: grid;
-    grid-template-columns: 350px 450px;
-    grid-template-rows: 80px 80px 80px 80px 30px;
-    row-gap: 30px;
-    grid-template-areas: 
-    "first imagen"
-    "last imagen"
-    "emailc imagen"
-    "phonec imagen"
-    "submit imagen";
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-
-/* Media Query Web Contact */
-
-@media (max-width: 576px) {
-
-    header nav ul li a, header nav ul li{
-        font-size: 10px;
-        justify-items: center;
-     }
-
-    .archiplus{
-        font-size: 15px;
-          
+@media (min-width: 768px){
+    .nav{
+        max-height: none;
+        top: 0px;   
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
     }
 
-    header img{
-        height: 50.40px;
+    .menu li{
+        float: left;
     }
 
-    #index_mainprojects{
-        height: 80px;
-    }
-
-    main p{
-        font-size: 10px;
-           
-    }
-
-    .titulos{
-        font-size: 30px;
-    }
-
-    .titulos3{
-        font-size: 15px;
+    .menu a{
+        color: lightgoldenrodyellow;
+        font-family: 'Poppins', sans-serif;
+        font-size: px;
     
     }
 
-    .parrafos1{
-        font-size: 10px;
-        
-    }
-
-    #grilla_maincontact{
-        grid-template-columns: 1fr;
-        grid-template-rows: 130px 100px 130px 100px 130px 100px;
-        row-gap: 0px;
-        
-        padding: 0px 0px 50px 0px;
-        grid-template-areas:
-        "imgphone"
-        "phone"
-        "imgemail"
-        "email"
-        "imginst"
-        "instagram";
-        
-    }
-
-    .applynow{
-    
-        font-size: 12px;
-        height: 80px;
-        
-    }
-
-    .f-contact{
-        height: 30px;
-        width: 200px;
-    }
-
-    .div-imagen{
-        height: 350px;
-        width: 300px;
-    }
-
-    .parrafosC{
-        text-align: left;
-        font-size: 15px;
-        line-height: 1.4;
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-    }
-
-    #grilla_sectioncontact{
-    grid-template-columns: 200px 250px;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    row-gap: 30px;
-    column-gap: 50px;
-    grid-template-areas: 
-    "first imagen"
-    "last imagen"
-    "emailc imagen"
-    "phonec imagen"
-    "submit imagen";
+    .menu a:hover{
+        background-color: transparent;
+        color: lightgoldenrodyellow;
 
     }
 
+    .hamb{
+        display: none;
+    }
 }
