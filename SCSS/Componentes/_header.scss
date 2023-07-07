@@ -17,8 +17,8 @@ a{
  }
  
  .header{
-     background-color: cadetblue;
-     box-shadow: 1px 1px 5px 0px grey;
+     background-color: $color-p;
+     box-shadow: 1px 1px 5px 0px $color-sh-1;
      position: sticky;
      top: 0;
      width: 100%;
@@ -26,7 +26,7 @@ a{
  
  .logo{
      display: inline-block;
-     color: lightgoldenrodyellow;
+     color: $color-s;
      font-size: 40px;
      margin-left: 10px;
  }
@@ -36,7 +36,7 @@ a{
      width: 100%;
      height: 100%;
      position: fixed;
-     background-color: cadetblue;
+     background-color: $color-p;
      overflow: hidden;
      max-height: 0;
      transition: max-height .5s ease-out;
@@ -49,7 +49,7 @@ a{
  }
  
  .menu a:hover{
-     background-color: lightgoldenrodyellow;
+     background-color: $color-s;
  }
  
  .hamb{
@@ -68,7 +68,7 @@ a{
  
  .hamb-line::before, 
  .hamb-line::after{
-     background-color: lightgoldenrodyellow;
+     background-color: $color-s;
      content: "";
      display: block;
      height: 100%;
@@ -130,7 +130,7 @@ a{
      }
  
      .menu a{
-         color: lightgoldenrodyellow;
+         color: $color-s;
          font-family: 'Poppins', sans-serif;
          font-size: 20px;
      
@@ -138,7 +138,7 @@ a{
  
      .menu a:hover{
          background-color: transparent;
-         color: lightgoldenrodyellow;
+         color: $color-s;
  
      }
  

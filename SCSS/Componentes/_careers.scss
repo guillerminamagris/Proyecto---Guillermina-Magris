@@ -1,0 +1,78 @@
+  
+  
+  .titulos {
+    padding: 10px 0px;
+    color: $color-p;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    text-shadow: 1.5px 1.5px 1.5px $color-sh-2;
+  }
+  
+  .titulos2 {
+    padding: 10px 0px;
+    color: $color-p;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .parrafos1 {
+    padding: 0px 20px 20px 0px;
+    font-size: 20px;
+  }
+  
+  
+  
+  .applynow1{
+    background-color: $color-t;
+    height: 30px;
+    width: 80px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
+    font-size: $sz-t4;
+    font-weight: 600px;
+  }
+  
+  .div-careers{
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid $color-p;
+  }
+  
+  .titulo-careers{
+    font-size: $sz-t3;
+    padding: 5px 10px 10px 0px;
+    background-color: $color-s;
+  }
+  .titulos4{
+    font-size: $sz-t4;
+    padding: 5px 10px 10px 0px;
+  }
+  
+  .imagenwp{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .imagenmail{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .imagenins{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .applynow{
+    background-color: $color-s;
+    height: 50px;
+    width: 200px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 800px;
+    
+  }
+ 

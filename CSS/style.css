@@ -1,33 +1,6 @@
-/* font-family: 'Poppins', sans-serif; */
 * {
   margin: 0px;
   padding: 0px;
-}
-
-.titulos {
-  padding: 10px 0px;
-  color: cadetblue;
-  display: flex;
-  justify-content: center;
-  font-size: 35px;
-  text-shadow: 1.5px 1.5px 1.5px lightgrey;
-}
-
-.titulos2 {
-  padding: 10px 0px;
-  color: cadetblue;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.parrafos1 {
-  padding: 0px 20px 20px 20px;
-  font-size: 20px;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -128,132 +101,6 @@ ul {
   top: 0;
 }
 
-.h2-about1{
-  grid-area: titulo1;
-}
-
-.div-president1{
-  grid-area: president1 ;
-}
-
-.div-president2{
-  grid-area: president2;
-}
-
-.h2-about2{
-  grid-area: titulo2;
-}
-
-.div-principal1{
-  grid-area: principal1;
-}
- .div-principal2{
-  grid-area: principal2;
- }
-
-
-#grilla-about{
-  display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 100px 800px 100px 800px;
-  grid-template-areas: 
-  "titulo1"
-  "president1 president2"
-  "titulo2"
-  "principal1 principal2";
-
-}
-
-.applynow1{
-  background-color: plum;
-  height: 30px;
-  width: 80px;
-  border: none;
-  box-shadow: 1.5px 1.5px 1.5px lightgrey;
-  font-weight: 600px;
-}
-
-.div-careers{
-  margin: 10px;
-  padding: 10px;
-  border: 5px solid cadetblue;
-}
-
-.titulo-careers{
-  font-size: 25px;
-  padding: 5px 10px 10px 0px;
-  background-color: lightgoldenrodyellow;
-}
-.titulos4{
-  font-size: 15px;
-  padding: 5px 10px 10px 0px;
-}
-
-.imagenwp{
-  height: 100px;
-  width: 100px;
-}
-
-.imagenmail{
-  height: 100px;
-  width: 100px;
-}
-
-.imagenins{
-  height: 100px;
-  width: 100px;
-}
-
-.applynow{
-  background-color: lightgoldenrodyellow;
-  height: 50px;
-  width: 200px;
-  border: none;
-  box-shadow: 1.5px 1.5px 1.5px lightgrey;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 800px;
-  
-}
-.dvi-iphone{
-  grid-area: iphoone;
-}
-
-.div-phone{
-  grid-area: phone;
-}
-
-.div-iemail{
-  grid-area: iemail;
-}
-
-.div-email{
-  grid-area: email;
-}
-
-.div-iinst{
-  grid-area: iinst;
-}
-
-.div-inst{
-  grid-area: inst;
-}
-
-
-#grilla_maincontact{
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 150px 80px;
-  column-gap: 50px;
-  grid-template-areas: 
-  "iphone iemail iinst"
-  "phone email inst";
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-
 @media (min-width: 768px) {
   .header {
     display: flex;
@@ -283,40 +130,79 @@ ul {
   .hamb {
     display: none;
   }
-
+}
+.titulos {
+  padding: 10px 0px;
+  color: cadetblue;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  text-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
 
-@media (max-width: 576px){
-  .parrafos1 {
-    font-size: 12px;
-  }
-  .titulos{
-    font-size: 30px;
-  }
+.titulos2 {
+  padding: 10px 0px;
+  color: cadetblue;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
 
-  .titulos2{
-    font-size: 25px;
-    text-align: center;
-  }
-  .titulo-careers{
-    font-size: 20px ;
-  }
+.parrafos1 {
+  padding: 0px 20px 20px 0px;
+  font-size: 20px;
+}
 
-  #grilla_maincontact{
-    display: grid;
-    grid-template-rows: 150px 80px 150px 80px 150px 80px;
-    grid-template-areas: 
-    "iphone"
-    "phone"
-    "iemail"
-    "email"
-    "iinst"
-    "inst";
-    align-items: center;
-    justify-content: center;
-  
-  }
+.applynow1 {
+  background-color: plum;
+  height: 30px;
+  width: 80px;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-size: 15px;
+  font-weight: 600px;
+}
+
+.div-careers {
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid cadetblue;
+}
+
+.titulo-careers {
+  font-size: 25px;
+  padding: 5px 10px 10px 0px;
+  background-color: lightgoldenrodyellow;
+}
+
+.titulos4 {
+  font-size: 15px;
+  padding: 5px 10px 10px 0px;
+}
+
+.imagenwp {
+  height: 100px;
+  width: 100px;
+}
+
+.imagenmail {
+  height: 100px;
+  width: 100px;
+}
+
+.imagenins {
+  height: 100px;
+  width: 100px;
+}
+
+.applynow {
+  background-color: lightgoldenrodyellow;
+  height: 50px;
+  width: 200px;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */
-
