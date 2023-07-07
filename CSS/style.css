@@ -205,4 +205,20 @@ ul {
   font-weight: 800px;
 }
 
+@media (max-width: 576px) {
+  .parrafos1 {
+    font-size: 15px;
+  }
+  .titulos {
+    font-size: 30px;
+  }
+  .titulos2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .titulo-careers {
+    font-size: 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

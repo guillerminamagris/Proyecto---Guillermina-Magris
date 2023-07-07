@@ -1,30 +1,30 @@
   
   
-  .titulos {
+.titulos {
     padding: 10px 0px;
     color: $color-p;
     display: flex;
     justify-content: center;
     font-size: 35px;
     text-shadow: 1.5px 1.5px 1.5px $color-sh-2;
-  }
+}
   
-  .titulos2 {
+.titulos2 {
     padding: 10px 0px;
     color: $color-p;
     font-size: 30px;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .parrafos1 {
+.parrafos1 {
     padding: 0px 20px 20px 0px;
     font-size: 20px;
-  }
+}
   
   
   
-  .applynow1{
+.applynow1{
     background-color: $color-t;
     height: 30px;
     width: 80px;
@@ -32,40 +32,41 @@
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
     font-size: $sz-t4;
     font-weight: 600px;
-  }
+}
   
-  .div-careers{
+.div-careers{
     margin: 10px;
     padding: 10px;
     border: 5px solid $color-p;
-  }
+}
   
-  .titulo-careers{
+.titulo-careers{
     font-size: $sz-t3;
     padding: 5px 10px 10px 0px;
     background-color: $color-s;
-  }
-  .titulos4{
+}
+
+.titulos4{
     font-size: $sz-t4;
     padding: 5px 10px 10px 0px;
-  }
+}
   
-  .imagenwp{
+.imagenwp{
     height: 100px;
     width: 100px;
-  }
+}
   
-  .imagenmail{
+.imagenmail{
     height: 100px;
     width: 100px;
-  }
+}
   
-  .imagenins{
+.imagenins{
     height: 100px;
     width: 100px;
-  }
+}
   
-  .applynow{
+.applynow{
     background-color: $color-s;
     height: 50px;
     width: 200px;
@@ -74,5 +75,21 @@
     font-family: 'Poppins', sans-serif; 
     font-weight: 800px;
     
-  }
+}
  
+@media (max-width: 576px){
+    .parrafos1 {
+      font-size: 15px;
+    }
+    .titulos{
+      font-size: 30px;
+    }
+  
+    .titulos2{
+      font-size: 25px;
+      text-align: center;
+    }
+    .titulo-careers{
+      font-size: 20px ;
+    }
+}

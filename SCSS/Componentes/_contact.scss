@@ -1,0 +1,62 @@
+.imagenwp{
+    height: 100px;
+    width: 100px;
+}
+  
+.imagenmail{
+    height: 100px;
+    width: 100px;
+}
+  
+.imagenins{
+    height: 100px;
+    width: 100px;
+}
+  
+.applynow{
+    background-color: lightgoldenrodyellow;
+    height: 50px;
+    width: 200px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 800px;
+    
+}
+
+.dvi-iphone{
+    grid-area: iphoone;
+}
+  
+.div-phone{
+    grid-area: phone;
+}
+  
+.div-iemail{
+    grid-area: iemail;
+}
+  
+.div-email{
+    grid-area: email;
+}
+  
+.div-iinst{
+    grid-area: iinst;
+}
+  
+.div-inst{
+    grid-area: inst;
+}
+  
+#grilla_maincontact{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 80px;
+    column-gap: 50px;
+    grid-template-areas: 
+    "iphone iemail iinst"
+    "phone email inst";
+    justify-content: center;
+    
+}
+  
