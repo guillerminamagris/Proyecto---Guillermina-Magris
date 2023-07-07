@@ -1,0 +1,148 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+a{
+    text-decoration: none; 
+    
+ }
+ 
+ 
+ ul{
+     list-style: none;
+ }
+ 
+ .header{
+     background-color: cadetblue;
+     box-shadow: 1px 1px 5px 0px grey;
+     position: sticky;
+     top: 0;
+     width: 100%;
+ }
+ 
+ .logo{
+     display: inline-block;
+     color: lightgoldenrodyellow;
+     font-size: 40px;
+     margin-left: 10px;
+ }
+ 
+ 
+ .nav{
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     background-color: cadetblue;
+     overflow: hidden;
+     max-height: 0;
+     transition: max-height .5s ease-out;
+ }
+ 
+ .menu a{
+     display: block;
+     padding: 30px;
+     color: black;
+ }
+ 
+ .menu a:hover{
+     background-color: lightgoldenrodyellow;
+ }
+ 
+ .hamb{
+     cursor: pointer;
+     float: right;
+     padding: 15px 10px;
+ }
+ 
+ .hamb-line{
+     background-color: white;
+     display: block;
+     height: 2px;
+     position: relative;
+     width: 24px;
+ }
+ 
+ .hamb-line::before, 
+ .hamb-line::after{
+     background-color: lightgoldenrodyellow;
+     content: "";
+     display: block;
+     height: 100%;
+     position: absolute;
+     transition: all .2s ease-out;
+     width: 100%;
+ }
+ 
+ .hamb-line::before{
+     top: 5px;
+ }
+ 
+ .hamb-line::after{
+     top: -5px;
+ }
+ 
+ .side-menu{
+     display: none;
+ }
+ 
+ .side-menu:checked ~ nav{
+     max-height: 100%;
+ }
+ 
+ .side-menu:checked ~ .hamb .hamb-line{
+     background-color: transparent;
+ }
+ 
+ .side-menu:checked ~ .hamb .hamb-line::before{
+     transform: rotate(-45deg);
+     top: 0;
+ }
+ 
+ .side-menu:checked ~ .hamb .hamb-line::after{
+     transform: rotate(45deg);
+     top: 0;
+ 
+ }
+ 
+ @media (min-width: 768px){
+ 
+     .header{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+     .nav{
+         max-height: none;
+         top: 0px;   
+         position: relative;
+         float: right;
+         width: fit-content;
+         background-color: transparent;
+ 
+     }
+ 
+     .menu li{
+         float: left;
+     }
+ 
+     .menu a{
+         color: lightgoldenrodyellow;
+         font-family: 'Poppins', sans-serif;
+         font-size: 20px;
+     
+     }
+ 
+     .menu a:hover{
+         background-color: transparent;
+         color: lightgoldenrodyellow;
+ 
+     }
+ 
+     .hamb{
+         display: none;
+     }
+ }

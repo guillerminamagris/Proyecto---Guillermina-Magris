@@ -1,156 +1,322 @@
 /* font-family: 'Poppins', sans-serif; */
-
-*{
-    margin: 0px;
-    padding: 0px;
-    
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+.titulos {
+  padding: 10px 0px;
+  color: cadetblue;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  text-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
 
-main{
-    padding: 20px;
+.titulos2 {
+  padding: 10px 0px;
+  color: cadetblue;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-a{
-   text-decoration: none; 
-   
+.parrafos1 {
+  padding: 0px 20px 20px 20px;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: cadetblue;
+  box-shadow: 1px 1px 5px 0px grey;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  color: lightgoldenrodyellow;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: cadetblue;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  color: black;
+}
+
+.menu a:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 15px 10px;
+}
+
+.hamb-line {
+  background-color: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+  background-color: lightgoldenrodyellow;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background-color: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.h2-about1{
+  grid-area: titulo1;
+}
+
+.div-president1{
+  grid-area: president1 ;
+}
+
+.div-president2{
+  grid-area: president2;
+}
+
+.h2-about2{
+  grid-area: titulo2;
+}
+
+.div-principal1{
+  grid-area: principal1;
+}
+ .div-principal2{
+  grid-area: principal2;
+ }
+
+
+#grilla-about{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 100px 800px 100px 800px;
+  grid-template-areas: 
+  "titulo1"
+  "president1 president2"
+  "titulo2"
+  "principal1 principal2";
+
+}
+
+.applynow1{
+  background-color: plum;
+  height: 30px;
+  width: 80px;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-weight: 600px;
+}
+
+.div-careers{
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid cadetblue;
+}
+
+.titulo-careers{
+  font-size: 25px;
+  padding: 5px 10px 10px 0px;
+  background-color: lightgoldenrodyellow;
+}
+.titulos4{
+  font-size: 15px;
+  padding: 5px 10px 10px 0px;
+}
+
+.imagenwp{
+  height: 100px;
+  width: 100px;
+}
+
+.imagenmail{
+  height: 100px;
+  width: 100px;
+}
+
+.imagenins{
+  height: 100px;
+  width: 100px;
+}
+
+.applynow{
+  background-color: lightgoldenrodyellow;
+  height: 50px;
+  width: 200px;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 800px;
+  
+}
+.dvi-iphone{
+  grid-area: iphoone;
+}
+
+.div-phone{
+  grid-area: phone;
+}
+
+.div-iemail{
+  grid-area: iemail;
+}
+
+.div-email{
+  grid-area: email;
+}
+
+.div-iinst{
+  grid-area: iinst;
+}
+
+.div-inst{
+  grid-area: inst;
 }
 
 
-ul{
-    list-style: none;
-}
+#grilla_maincontact{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 150px 80px;
+  column-gap: 50px;
+  grid-template-areas: 
+  "iphone iemail iinst"
+  "phone email inst";
+  align-items: center;
+  justify-content: center;
 
-.header{
-    background-color: cadetblue;
-    box-shadow: 1px 1px 5px 0px grey;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-
-.logo{
-    display: inline-block;
-    color: lightgoldenrodyellow;
-    font-size: 40px;
-    margin-left: 10px;
 }
 
 
-.nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: cadetblue;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .5s ease-out;
-}
 
-.menu a{
-    display: block;
-    padding: 30px;
-    color: black;
-}
-
-.menu a:hover{
-    background-color: lightgoldenrodyellow;
-}
-
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 15px 10px;
-}
-
-.hamb-line{
-    background-color: white;
-    display: block;
-    height: 2px;
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    max-height: none;
+    top: 0px;
     position: relative;
-    width: 24px;
-}
-
-.hamb-line::before, 
-.hamb-line::after{
-    background-color: lightgoldenrodyellow;
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.hamb-line::before{
-    top: 5px;
-}
-
-.hamb-line::after{
-    top: -5px;
-}
-
-.side-menu{
-    display: none;
-}
-
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-
-.side-menu:checked ~ .hamb .hamb-line{
+    float: right;
+    width: fit-content;
     background-color: transparent;
+  }
+  .menu li {
+    float: left;
+  }
+  .menu a {
+    color: lightgoldenrodyellow;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
+  .menu a:hover {
+    background-color: transparent;
+    color: lightgoldenrodyellow;
+  }
+  .hamb {
+    display: none;
+  }
+
 }
 
-.side-menu:checked ~ .hamb .hamb-line::before{
-    transform: rotate(-45deg);
-    top: 0;
+@media (max-width: 576px){
+  .parrafos1 {
+    font-size: 12px;
+  }
+  .titulos{
+    font-size: 30px;
+  }
+
+  .titulos2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .titulo-careers{
+    font-size: 20px ;
+  }
+
+  #grilla_maincontact{
+    display: grid;
+    grid-template-rows: 150px 80px 150px 80px 150px 80px;
+    grid-template-areas: 
+    "iphone"
+    "phone"
+    "iemail"
+    "email"
+    "iinst"
+    "inst";
+    align-items: center;
+    justify-content: center;
+  
+  }
 }
 
-.side-menu:checked ~ .hamb .hamb-line::after{
-    transform: rotate(45deg);
-    top: 0;
+/*# sourceMappingURL=style.css.map */
 
-}
-
-@media (min-width: 768px){
-
-    .header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .nav{
-        max-height: none;
-        top: 0px;   
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-
-    }
-
-    .menu li{
-        float: left;
-    }
-
-    .menu a{
-        color: lightgoldenrodyellow;
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-    
-    }
-
-    .menu a:hover{
-        background-color: transparent;
-        color: lightgoldenrodyellow;
-
-    }
-
-    .hamb{
-        display: none;
-    }
-}
