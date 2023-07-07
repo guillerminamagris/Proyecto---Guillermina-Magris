@@ -14,13 +14,14 @@
 }
   
 .applynow{
-    background-color: lightgoldenrodyellow;
-    height: 50px;
-    width: 200px;
+    background-color: $color-s;
+    height: 60px;
+    width: 250px;
     border: none;
-    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 800px;
+    font-weight: 600px;
+    font-size:$sz-t4;
     
 }
 
@@ -50,13 +51,121 @@
   
 #grilla_maincontact{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 150px 80px;
-    column-gap: 50px;
+    column-gap: 20px;
     grid-template-areas: 
     "iphone iemail iinst"
     "phone email inst";
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px 50px 0px;
     
 }
+
+.f-contact{
+    opacity: 0.3;
+    height: 30px;
+    width: 500px;
+    border: 2px solid $color-sh-1;
+    box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
+}
+
+.div-firstname{
+    grid-area: firstn;
+}
+
+.div-lastname{
+    grid-area: lastn;
+}
+
+.div-emailc{
+    grid-area: emailc;
+}
+
+.div-phonec{
+    grid-area: phonec;
+}
+
+.div-submit{
+    grid-area: submit;
+    background-color: $color-t;
+    height: 30px;
+    width: 500px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600px;
+    font-size:$sz-p;
+    
+}
+
+.div-imagen{
+    height: 500px;
+    width: 500px;
+    grid-area: imagenc;
+}
+
+.parrafosC{
+    font-family: 'Poppins', sans-serif; 
+    font-size: $sz-p;
+}
+
+#grilla_sectioncontact{
+    border: solid 5px $color-sh-2;
+    display: grid;
+    grid-template-columns: 600px 500px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    "firstn imagenc"
+    "lastn imagenc"
+    "emailc imagenc"
+    "phonec imagenc"
+    "submit imagenc";
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin: 0px 30px;
+    
+}
+  
+@media (max-width: 576px){
+      
+    #grilla_maincontact{
+      display: grid;
+      grid-template-rows: 150px 80px 150px 80px 150px 80px;
+      grid-template-areas: 
+      "iphone"
+      "phone"
+      "iemail"
+      "email"
+      "iinst"
+      "inst";
+      align-items: center;
+      justify-content: center;
+    
+    }
+  
+
+  #grilla_sectioncontact{
+    border: solid 5px $color-sh-2;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    "firstn"
+    "lastn"
+    "emailc"
+    "phonec"
+    "submit"
+    "imagenc";
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin: 0px 30px;
+    }
+    
+} 
   

@@ -5,6 +5,10 @@
     
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 
 a{
     text-decoration: none; 
@@ -25,6 +29,7 @@ a{
  }
  
  .logo{
+    font-family: 'Poppins', sans-serif;
      display: inline-block;
      color: $color-s;
      font-size: 40px;

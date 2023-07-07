@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,6 +24,7 @@ ul {
 }
 
 .logo {
+  font-family: "Poppins", sans-serif;
   display: inline-block;
   color: lightgoldenrodyellow;
   font-size: 40px;
@@ -132,6 +137,7 @@ ul {
   }
 }
 .titulos {
+  font-family: "Poppins", sans-serif;
   padding: 10px 0px;
   color: cadetblue;
   display: flex;
@@ -141,6 +147,7 @@ ul {
 }
 
 .titulos2 {
+  font-family: "Poppins", sans-serif;
   padding: 10px 0px;
   color: cadetblue;
   font-size: 30px;
@@ -149,11 +156,13 @@ ul {
 }
 
 .parrafos1 {
+  font-family: "Poppins", sans-serif;
   padding: 0px 20px 20px 0px;
   font-size: 20px;
 }
 
 .applynow1 {
+  font-family: "Poppins", sans-serif;
   background-color: plum;
   height: 30px;
   width: 80px;
@@ -170,12 +179,14 @@ ul {
 }
 
 .titulo-careers {
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   padding: 5px 10px 10px 0px;
   background-color: lightgoldenrodyellow;
 }
 
 .titulos4 {
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   padding: 5px 10px 10px 0px;
 }
@@ -218,6 +229,148 @@ ul {
   }
   .titulo-careers {
     font-size: 20px;
+  }
+}
+.imagenwp {
+  height: 100px;
+  width: 100px;
+}
+
+.imagenmail {
+  height: 100px;
+  width: 100px;
+}
+
+.imagenins {
+  height: 100px;
+  width: 100px;
+}
+
+.applynow {
+  background-color: lightgoldenrodyellow;
+  height: 60px;
+  width: 250px;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  font-size: 15px;
+}
+
+.dvi-iphone {
+  grid-area: iphoone;
+}
+
+.div-phone {
+  grid-area: phone;
+}
+
+.div-iemail {
+  grid-area: iemail;
+}
+
+.div-email {
+  grid-area: email;
+}
+
+.div-iinst {
+  grid-area: iinst;
+}
+
+.div-inst {
+  grid-area: inst;
+}
+
+#grilla_maincontact {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 150px 80px;
+  column-gap: 20px;
+  grid-template-areas: "iphone iemail iinst" "phone email inst";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px 50px 0px;
+}
+
+.f-contact {
+  opacity: 0.3;
+  height: 30px;
+  width: 500px;
+  border: 2px solid grey;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+}
+
+.div-firstname {
+  grid-area: firstn;
+}
+
+.div-lastname {
+  grid-area: lastn;
+}
+
+.div-emailc {
+  grid-area: emailc;
+}
+
+.div-phonec {
+  grid-area: phonec;
+}
+
+.div-submit {
+  grid-area: submit;
+  background-color: plum;
+  height: 30px;
+  width: 500px;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  font-size: 20px;
+}
+
+.div-imagen {
+  height: 500px;
+  width: 500px;
+  grid-area: imagenc;
+}
+
+.parrafosC {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+#grilla_sectioncontact {
+  border: solid 5px lightgrey;
+  display: grid;
+  grid-template-columns: 600px 500px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-areas: "firstn imagenc" "lastn imagenc" "emailc imagenc" "phonec imagenc" "submit imagenc";
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  margin: 0px 30px;
+}
+
+@media (max-width: 576px) {
+  #grilla_maincontact {
+    display: grid;
+    grid-template-rows: 150px 80px 150px 80px 150px 80px;
+    grid-template-areas: "iphone" "phone" "iemail" "email" "iinst" "inst";
+    align-items: center;
+    justify-content: center;
+  }
+  #grilla_sectioncontact {
+    border: solid 5px lightgrey;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas: "firstn" "lastn" "emailc" "phonec" "submit" "imagenc";
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin: 0px 30px;
   }
 }
 
