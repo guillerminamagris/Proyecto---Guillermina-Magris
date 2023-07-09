@@ -1,3 +1,41 @@
+.div-archiplus {
+  grid-area: archiplus;
+}
+
+.div-mapa {
+  grid-area: mapa;
+}
+
+.div-medios {
+  grid-area: medios;
+}
+
+#grilla_footer {
+  background-color: rgb(237, 237, 229);
+  display: grid;
+  grid-template-columns: 400px 600px 500px;
+  grid-template-areas: "archiplus" "mapa" "medios";
+}
+
+.titulo-f {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: grey;
+  padding: 5px 10px 10px 0px;
+  text-shadow: 2px 2px 2px lightgrey;
+}
+
+.titulo-ap {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: grey;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+.p {
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -261,21 +299,6 @@ ul {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   padding: 5px 10px 10px 0px;
-}
-
-.imagenwp {
-  height: 100px;
-  width: 100px;
-}
-
-.imagenmail {
-  height: 100px;
-  width: 100px;
-}
-
-.imagenins {
-  height: 100px;
-  width: 100px;
 }
 
 .applynow {
@@ -617,38 +640,6 @@ ul {
   .parrafos-p {
     font-size: 13px;
   }
-}
-.titulo-f {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  color: grey;
-  padding: 5px 10px 10px 0px;
-  text-shadow: 2px 2px 2px lightgrey;
-}
-
-.titulo-ap {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: grey;
-  text-shadow: 1px 1px 1px lightgrey;
-}
-
-.div-archiplus {
-  grid-area: archiplus;
-}
-
-.div-mapa {
-  grid-area: mapa;
-}
-
-.div-medios {
-  grid-area: medios;
-}
-
-#grilla_footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "archiplus" "mapa" "medios";
 }
 
 /*# sourceMappingURL=style.css.map */

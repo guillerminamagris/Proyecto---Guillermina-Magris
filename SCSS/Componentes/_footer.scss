@@ -1,20 +1,3 @@
-.titulo-f{
-    font-family: 'Poppins', sans-serif;
-    font-size: $sz-t2;
-    color: $color-sh-1;
-    padding: 5px 10px 10px 0px;
-    text-shadow: 2px 2px 2px $color-sh-2;
-}
-
-.titulo-ap{
-    font-family: 'Poppins', sans-serif;
-    font-size: $sz-p;
-    color: $color-sh-1;
-    text-shadow: 1px 1px 1px $color-sh-2;
-
-}
-
-
 .div-archiplus{
     grid-area: archiplus;
 }
@@ -29,8 +12,32 @@
 
 
 #grilla_footer{
+    background-color: map-get($footer-ppl , bg );
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 400px 600px 500px;
     grid-template-areas: 
     "archiplus" "mapa" "medios";
+}
+
+
+
+.titulo-f{
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-1 );
+    color: map-get($footer-ppl , color );
+    padding: 5px 10px 10px 0px;
+    text-shadow: 2px 2px 2px $color-sh-2;
+}
+
+.titulo-ap{
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-2 );
+    color: map-get($footer-ppl , color );
+    text-shadow: 1px 1px 1px $color-sh-2;
+
+}
+
+.p{
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-3 );
 }
