@@ -3,6 +3,78 @@
   padding: 0px;
 }
 
+.parrafos1 {
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.imgabout {
+  height: 500px;
+  width: 350px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.h2-about1 {
+  grid-area: titulo1;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 5px 10px 10px 0px;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+.div-president1 {
+  grid-area: president1;
+}
+
+.div-president2 {
+  grid-area: president2;
+}
+
+.h2-about2 {
+  grid-area: titulo2;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 5px 10px 10px 0px;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+.div-principal1 {
+  grid-area: principal1;
+}
+
+.div-principal2 {
+  grid-area: principal2;
+}
+
+#grilla-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 600px 50px 600px;
+  grid-template-areas: "titulo1 titulo1" "president1 president2" "titulo2 titulo2" "principal1 principal2";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .imgabout {
+    height: 380px;
+    width: 250px;
+  }
+  #grilla-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 450px 450px 50px 450px 450px;
+    grid-template-areas: "titulo1" "president1" "president2" "titulo2" "principal1" "principal2";
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -231,6 +303,11 @@ ul {
     font-size: 20px;
   }
 }
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .imagenwp {
   height: 100px;
   width: 100px;
@@ -354,24 +431,224 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .imagenwp {
+    height: 70px;
+    width: 70px;
+  }
+  .imagenmail {
+    height: 70px;
+    width: 70px;
+  }
+  .imagenins {
+    height: 70px;
+    width: 70px;
+  }
+  .applynow {
+    height: 40px;
+    width: 150px;
+    font-weight: 600px;
+    font-size: 10px;
+  }
   #grilla_maincontact {
     display: grid;
     grid-template-rows: 150px 80px 150px 80px 150px 80px;
+    column-gap: 20px;
     grid-template-areas: "iphone" "phone" "iemail" "email" "iinst" "inst";
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 100px;
   }
   #grilla_sectioncontact {
-    border: solid 5px lightgrey;
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
     grid-template-areas: "firstn" "lastn" "emailc" "phonec" "submit" "imagenc";
-    row-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 70px;
-    margin: 0px 30px;
   }
+  .div-imagen {
+    height: 100px;
+    width: 100px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.imgprojects {
+  width: 100%;
+}
+
+.b-residential {
+  grid-area: bresi;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+.b-landscape {
+  grid-area: bland;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+.b-commercial {
+  grid-area: bcom;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+.b-interior {
+  grid-area: binterior;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+.b-hospi {
+  grid-area: bhosp;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+.b-office {
+  grid-area: boffice;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+#index_mainprojects {
+  background-image: url(/IMAGES/fondo\ projects.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px;
+  row-gap: 10px;
+  grid-template-areas: "bresi" "bland" "bcom" "binterior" "bhosp" "boffice";
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+}
+
+.div-projects {
+  align-items: center;
+  border: solid cadetblue 2px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+.titulos3 {
+  color: cadetblue;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+.titulos4 {
+  color: cadetblue;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+.parrafos-p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .b-residential {
+    font-size: 15px;
+  }
+  .b-landscape {
+    font-size: 15px;
+  }
+  .b-commercial {
+    font-size: 15px;
+  }
+  .b-interior {
+    font-size: 15px;
+  }
+  .b-hospi {
+    font-size: 15px;
+  }
+  .b-office {
+    font-size: 15px;
+  }
+  .titulos3 {
+    font-size: 20px;
+  }
+  .titulos4 {
+    font-size: 15px;
+  }
+  .parrafos-p {
+    font-size: 13px;
+  }
+}
+.titulo-f {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: grey;
+  padding: 5px 10px 10px 0px;
+  text-shadow: 2px 2px 2px lightgrey;
+}
+
+.titulo-ap {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: grey;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+.div-archiplus {
+  grid-area: archiplus;
+}
+
+.div-mapa {
+  grid-area: mapa;
+}
+
+.div-medios {
+  grid-area: medios;
+}
+
+#grilla_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "archiplus" "mapa" "medios";
 }
 
 /*# sourceMappingURL=style.css.map */

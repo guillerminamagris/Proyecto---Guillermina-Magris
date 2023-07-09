@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+
 .imagenwp{
     height: 100px;
     width: 100px;
@@ -131,41 +137,65 @@
     
 }
   
-@media (max-width: 576px){
-      
-    #grilla_maincontact{
-      display: grid;
-      grid-template-rows: 150px 80px 150px 80px 150px 80px;
-      grid-template-areas: 
-      "iphone"
-      "phone"
-      "iemail"
-      "email"
-      "iinst"
-      "inst";
-      align-items: center;
-      justify-content: center;
-    
-    }
-  
 
-  #grilla_sectioncontact{
-    border: solid 5px $color-sh-2;
+@media (max-width: 576px) {
+    .imagenwp{
+        height: 70px;
+        width: 70px;
+    }
+      
+    .imagenmail{
+        height: 70px;
+        width: 70px;
+    }
+      
+    .imagenins{
+        height: 70px;
+        width: 70px;
+    }
+
+    .applynow{
+        height: 40px;
+        width: 150px;
+        font-weight: 600px;
+        font-size: 10px;
+        
+    }
+
+    #grilla_maincontact{
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-template-areas: 
-    "firstn"
-    "lastn"
-    "emailc"
-    "phonec"
-    "submit"
-    "imagenc";
-    row-gap: 30px;
+    grid-template-rows: 150px 80px 150px 80px 150px 80px;
+    column-gap: 20px;
+    grid-template-areas:
+    "iphone"
+    "phone"
+    "iemail"
+    "email"
+    "iinst"
+    "inst";
     justify-content: center;
     align-items: center;
-    padding: 70px;
-    margin: 0px 30px;
+    margin: 100px;
+
+    }
+
+    #grilla_sectioncontact{
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        grid-template-areas: 
+        "firstn"
+        "lastn"
+        "emailc"
+        "phonec"
+        "submit"
+        "imagenc";
+        
+    }
+     
+    .div-imagen{
+        height: 100px;
+        width: 100px;
+       
     }
     
-} 
-  
+}
