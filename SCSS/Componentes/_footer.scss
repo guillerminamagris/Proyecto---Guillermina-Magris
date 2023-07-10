@@ -1,22 +1,53 @@
-.div-archiplus{
+.titulo-f{
     grid-area: archiplus;
+}
+
+.titulo-ap{
+    grid-area: ayp;
+}
+
+.puntos{
+    grid-area: puntos;
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-p );
+    color: map-get($footer-ppl, color);
 }
 
 .div-mapa{
     grid-area: mapa;
 }
 
-.div-medios{
-    grid-area: medios;
+.p1{
+    grid-area: p1;
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-p );
+}
+
+.p2{
+    grid-area: p2;
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-p );
+}
+
+.p3{
+    grid-area: p3;
+    font-family: 'Poppins', sans-serif;
+    font-size: map-get($footer-ppl , fz-p);
 }
 
 
 #grilla_footer{
     background-color: map-get($footer-ppl , bg );
     display: grid;
-    grid-template-columns: 400px 600px 500px;
+    grid-template-columns: 300px 400px 300px;
+    grid-template-rows: 70px 80px 70px;
     grid-template-areas: 
-    "archiplus" "mapa" "medios";
+    "archiplus mapa p1"
+    "ayp mapa p2"
+    "puntos mapa p3";
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -37,7 +68,52 @@
 
 }
 
-.p{
-    font-family: 'Poppins', sans-serif;
-    font-size: map-get($footer-ppl , fz-3 );
+
+@media (max-width: 576px){
+
+    .mapa{
+        height: 200px;
+        width: 300px;
+    }
+
+    .titulo-f{
+
+     font-size: map-get($footer-ppl , fz-2);
+    }
+    
+    .titulo-ap{
+        
+     font-size: map-get($footer-ppl , fz-p);
+       
+    }
+
+    .p1{
+     font-size: map-get($footer-ppl , fz-m);
+    }
+    
+    .p2{
+     font-size: map-get($footer-ppl , fz-m);
+    }
+    
+    .p3{ 
+     font-size: map-get($footer-ppl , fz-m);
+    }
+
+    #grilla_footer{
+        background-color: map-get($footer-ppl , bg );
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  30px 20px 20px 200px 30px 30px 30px;
+        row-gap: 5px;
+        grid-template-areas: 
+        "archiplus"
+        "ayp"
+        "puntos"
+        "mapa"
+        "p1"
+        "p2"
+        "p3";
+    }
+
+   
 }
