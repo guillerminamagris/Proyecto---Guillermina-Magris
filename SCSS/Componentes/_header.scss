@@ -32,7 +32,7 @@ a{
     font-family: 'Poppins', sans-serif;
      display: inline-block;
      color: $color-s;
-     font-size: 40px;
+     font-size: 30px;
      margin-left: 10px;
  }
  
@@ -50,12 +50,17 @@ a{
  .menu a{
      display: block;
      padding: 30px;
-     color: black;
+     color: $color-s;
+     
  }
- 
+
+
  .menu a:hover{
-     background-color: $color-s;
+     background-color: transparent;
+     color: plum
  }
+
+
  
  .hamb{
      cursor: pointer;
@@ -142,12 +147,20 @@ a{
      }
  
      .menu a:hover{
-         background-color: transparent;
-         color: $color-s;
+        background-color: transparent;
+        color: plum;             
  
      }
- 
+
+     
      .hamb{
          display: none;
      }
+
+     .logo{
+
+         font-size: 40px;
+    
+     }
+     
  }

@@ -191,7 +191,7 @@ ul {
   font-family: "Poppins", sans-serif;
   display: inline-block;
   color: lightgoldenrodyellow;
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 10px;
 }
 
@@ -208,11 +208,12 @@ ul {
 .menu a {
   display: block;
   padding: 30px;
-  color: black;
+  color: lightgoldenrodyellow;
 }
 
 .menu a:hover {
-  background-color: lightgoldenrodyellow;
+  background-color: transparent;
+  color: plum;
 }
 
 .hamb {
@@ -294,10 +295,13 @@ ul {
   }
   .menu a:hover {
     background-color: transparent;
-    color: lightgoldenrodyellow;
+    color: plum;
   }
   .hamb {
     display: none;
+  }
+  .logo {
+    font-size: 40px;
   }
 }
 .titulos {
