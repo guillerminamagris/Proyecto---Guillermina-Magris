@@ -455,24 +455,85 @@ ul {
   opacity: 0.3;
   height: 30px;
   width: 500px;
-  border: 2px solid grey;
+  border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
 
-.div-firstname {
+.firstname {
   grid-area: firstn;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
-.div-lastname {
+.inputfn {
+  grid-template-areas: inputfn;
+  opacity: 0.3;
+  height: 30px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+  color: black;
+}
+
+.lastname {
   grid-area: lastn;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
-.div-emailc {
+.inputln {
+  grid-template-areas: inputln;
+  color: black;
+  opacity: 0.3;
+  height: 30px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+}
+
+.emailc {
   grid-area: emailc;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
-.div-phonec {
+.inpute {
+  grid-template-areas: inpute;
+  opacity: 0.3;
+  height: 30px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+}
+
+.phonec {
   grid-area: phonec;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.inputp {
+  grid-template-areas: inputp;
+  opacity: 0.3;
+  height: 30px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
+}
+
+.question {
+  grid-template-areas: question;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.inputq {
+  grid-template-areas: inputq;
+  opacity: 0.3;
+  height: 80px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
 
 .div-submit {
@@ -493,21 +554,16 @@ ul {
   grid-area: imagenc;
 }
 
-.parrafosC {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-}
-
 #grilla_sectioncontact {
   border: solid 5px lightgrey;
   display: grid;
-  grid-template-columns: 600px 500px;
-  grid-template-rows: 50px 50px 50px 50px 50px;
-  grid-template-areas: "firstn imagenc" "lastn imagenc" "emailc imagenc" "phonec imagenc" "submit imagenc";
-  row-gap: 30px;
+  grid-template-columns: 500px;
+  grid-template-rows: 20px 30px 20px 30px 20px 30px 20px 30px 20px 80px 30px;
+  grid-template-areas: "firstn" "inputfn" "lastn" "inputln" "emailc" "inpute" "phonec" "inputp" "question" "inputq" "submit";
+  row-gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  padding: 30px;
   margin: 0px 30px 30px;
 }
 
@@ -525,28 +581,33 @@ ul {
     width: 70px;
   }
   .applynow {
-    height: 40px;
+    height: 60px;
     width: 150px;
     font-weight: 600px;
-    font-size: 10px;
+    font-size: 13px;
   }
   #grilla_maincontact {
     display: grid;
-    grid-template-rows: 150px 80px 150px 80px 150px 80px;
+    grid-template-columns: 500px;
+    grid-template-rows: 100px 50px 100px 50px 100px 50px;
     column-gap: 20px;
     grid-template-areas: "iphone" "phone" "iemail" "email" "iinst" "inst";
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    margin: 20px;
+    padding: 0px;
   }
   #grilla_sectioncontact {
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px;
-    grid-template-areas: "firstn" "lastn" "emailc" "phonec" "submit" "imagenc";
+    grid-template-columns: 500px;
+    grid-template-rows: 20px 30px 20px 30px 20px 30px 20px 30px 20px 80px 30px;
+    grid-template-areas: "firstn" "inputfn" "lastn" "inputln" "emailc" "inpute" "phonec" "inputp" "question" "inputq" "submit";
+    padding: 20px 50px 20px 50px;
+    margin: 0px 10px 20px;
   }
   .div-imagen {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
 }
 * {
