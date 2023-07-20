@@ -105,6 +105,7 @@
   height: 500px;
   width: 350px;
   box-shadow: 4px 4px 4px lightgrey;
+  background: linear-gradient(right, black, grey);
 }
 
 .h2-about1 {
@@ -199,6 +200,7 @@ ul {
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: 5;
   background-color: cadetblue;
   overflow: hidden;
   max-height: 0;
@@ -318,7 +320,7 @@ ul {
   font-family: "Poppins", sans-serif;
   padding: 10px 0px;
   color: cadetblue;
-  font-size: 30px;
+  font-size: 35px;
   display: flex;
   justify-content: center;
 }
@@ -338,6 +340,10 @@ ul {
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
   font-size: 15px;
   font-weight: 600px;
+}
+
+.applynow1:hover {
+  transform: scale(1.1);
 }
 
 .div-careers {
@@ -415,12 +421,16 @@ ul {
   font-size: 15px;
 }
 
-.dvi-iphone {
-  grid-area: iphoone;
+.div-iphone {
+  grid-area: iphone;
 }
 
 .div-phone {
   grid-area: phone;
+}
+
+.div-phone:hover {
+  transform: scale(1.1);
 }
 
 .div-iemail {
@@ -431,12 +441,20 @@ ul {
   grid-area: email;
 }
 
+.div-email:hover {
+  transform: scale(1.1);
+}
+
 .div-iinst {
   grid-area: iinst;
 }
 
 .div-inst {
   grid-area: inst;
+}
+
+.div-inst:hover {
+  transform: scale(1.1);
 }
 
 #grilla_maincontact {
@@ -548,6 +566,10 @@ ul {
   font-size: 20px;
 }
 
+.div-submit:hover {
+  transform: scale(1.1);
+}
+
 .div-imagen {
   height: 500px;
   width: 500px;
@@ -628,7 +650,7 @@ ul {
   font-size: 20px;
   font-weight: 600px;
   text-align: left;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 20px;
 }
 
 .b-landscape {
@@ -640,7 +662,7 @@ ul {
   font-size: 20px;
   font-weight: 600px;
   text-align: left;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 20px;
 }
 
 .b-commercial {
@@ -652,7 +674,7 @@ ul {
   font-size: 20px;
   font-weight: 600px;
   text-align: left;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 20px;
 }
 
 .b-interior {
@@ -664,7 +686,7 @@ ul {
   font-size: 20px;
   font-weight: 600px;
   text-align: left;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 20px;
 }
 
 .b-hospi {
@@ -676,7 +698,7 @@ ul {
   font-size: 20px;
   font-weight: 600px;
   text-align: left;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 20px;
 }
 
 .b-office {
@@ -688,7 +710,31 @@ ul {
   font-size: 20px;
   font-weight: 600px;
   text-align: left;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 20px;
+}
+
+.b-residential:hover {
+  color: cadetblue;
+}
+
+.b-landscape:hover {
+  color: cadetblue;
+}
+
+.b-commercial:hover {
+  color: cadetblue;
+}
+
+.b-interior:hover {
+  color: cadetblue;
+}
+
+.b-hospi:hover {
+  color: cadetblue;
+}
+
+.b-offices:hover {
+  color: cadetblue;
 }
 
 #index_mainprojects {
@@ -696,7 +742,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 300px 500px;
   grid-template-rows: 40px 40px 40px 40px 40px 40px;
   row-gap: 10px;
   grid-template-areas: "bresi" "bland" "bcom" "binterior" "bhosp" "boffice";
@@ -732,6 +778,10 @@ ul {
 }
 
 @media (max-width: 576px) {
+  #index_mainprojects {
+    grid-template-columns: 200px 500px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px;
+  }
   .b-residential {
     font-size: 15px;
   }
@@ -758,6 +808,90 @@ ul {
   }
   .parrafos-p {
     font-size: 13px;
+  }
+}
+.proyecto1 {
+  grid-area: proyecto1;
+  height: 300px;
+  width: 400px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.proyecto2 {
+  grid-area: proyecto2;
+  height: 300px;
+  width: 400px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.proyecto3 {
+  grid-area: proyecto3;
+  height: 300px;
+  width: 400px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.proyecto4 {
+  grid-area: proyecto4;
+  height: 300px;
+  width: 400px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.proyecto5 {
+  grid-area: proyecto5;
+  height: 300px;
+  width: 400px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.proyecto6 {
+  grid-area: proyecto6;
+  height: 300px;
+  width: 400px;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.proyecto1:hover {
+  transform: scale(1.1);
+}
+
+.proyecto2:hover {
+  transform: scale(1.1);
+}
+
+.proyecto3:hover {
+  transform: scale(1.1);
+}
+
+.proyecto4:hover {
+  transform: scale(1.1);
+}
+
+.proyecto5:hover {
+  transform: scale(1.1);
+}
+
+.proyecto6:hover {
+  transform: scale(1.1);
+}
+
+#grilla_imagenes_index {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 300px 300px;
+  row-gap: 40px;
+  column-gap: 40px;
+  grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
+  margin: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  #grilla_imagenes_index {
+    grid-template-columns: 400px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
   }
 }
 

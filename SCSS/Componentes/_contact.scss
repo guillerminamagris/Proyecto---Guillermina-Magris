@@ -31,12 +31,17 @@
     
 }
 
-.dvi-iphone{
-    grid-area: iphoone;
+.div-iphone{
+    grid-area: iphone;
 }
+
   
 .div-phone{
     grid-area: phone;
+}
+
+.div-phone:hover{
+    transform: scale(1.1);
 }
   
 .div-iemail{
@@ -46,6 +51,11 @@
 .div-email{
     grid-area: email;
 }
+
+.div-email:hover{
+    transform: scale(1.1);
+}
+  
   
 .div-iinst{
     grid-area: iinst;
@@ -54,6 +64,11 @@
 .div-inst{
     grid-area: inst;
 }
+
+.div-inst:hover{
+    transform: scale(1.1);
+}
+  
   
 #grilla_maincontact{
     display: grid;
@@ -171,6 +186,10 @@
     font-weight: 600px;
     font-size:$sz-p;
     
+}
+
+.div-submit:hover{
+    transform: scale(1.1);
 }
 
 .div-imagen{

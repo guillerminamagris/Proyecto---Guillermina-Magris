@@ -6,7 +6,7 @@
     color: $color-p;
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: $sz-t1;
     text-shadow: 1.5px 1.5px 1.5px $color-sh-2;
 }
   
@@ -14,7 +14,7 @@
     font-family: 'Poppins', sans-serif;
     padding: 10px 0px;
     color: $color-p;
-    font-size: 30px;
+    font-size: $sz-t1;
     display: flex;
     justify-content: center;
 }
@@ -22,7 +22,7 @@
 .parrafos1 {
     font-family: 'Poppins', sans-serif;
     padding: 0px 20px 20px 0px;
-    font-size: 20px;
+    font-size: $sz-p;
 }
   
   
@@ -36,6 +36,10 @@
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
     font-size: $sz-t4;
     font-weight: 600px;
+}
+
+.applynow1:hover{
+    transform: scale(1.1);
 }
   
 .div-careers{

@@ -1,0 +1,96 @@
+.proyecto1{
+    grid-area: proyecto1;
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 4px 4px $color-sh-2;
+}
+
+.proyecto2{
+    grid-area: proyecto2;
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 4px 4px $color-sh-2;
+}
+
+.proyecto3{
+    grid-area: proyecto3;
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 4px 4px $color-sh-2;
+}
+
+.proyecto4{
+    grid-area: proyecto4;
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 4px 4px $color-sh-2;
+}
+
+.proyecto5{
+    grid-area: proyecto5;
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 4px 4px $color-sh-2;
+}
+
+.proyecto6{
+    grid-area: proyecto6;
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 4px 4px $color-sh-2;
+}
+
+.proyecto1:hover{
+transform: scale(1.1);
+}
+
+.proyecto2:hover{
+    transform: scale(1.1);
+}
+
+.proyecto3:hover{
+    transform: scale(1.1);
+}
+
+.proyecto4:hover{
+    transform: scale(1.1);
+}
+
+.proyecto5:hover{
+    transform: scale(1.1);
+}
+
+.proyecto6:hover{
+    transform: scale(1.1);
+}
+
+#grilla_imagenes_index{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 300px 300px;
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-template-areas: 
+    "proyecto1 proyecto2 proyecto3"
+    "proyecto4 proyecto5 proyecto6";
+    margin: 10px;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 576px){
+    #grilla_imagenes_index{
+        grid-template-columns: 400px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "proyecto1" 
+        "proyecto2" 
+        "proyecto3"
+        "proyecto4" 
+        "proyecto5" 
+        "proyecto6";
+        
+    }
+    
+}

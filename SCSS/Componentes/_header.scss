@@ -32,7 +32,7 @@ a{
     font-family: 'Poppins', sans-serif;
      display: inline-block;
      color: $color-s;
-     font-size: 30px;
+     font-size: $sz-t2;
      margin-left: 10px;
  }
  
@@ -41,6 +41,7 @@ a{
      width: 100%;
      height: 100%;
      position: fixed;
+     z-index: 5;
      background-color: $color-p;
      overflow: hidden;
      max-height: 0;
@@ -57,7 +58,7 @@ a{
 
  .menu a:hover{
      background-color: transparent;
-     color: plum
+     color: $color-t;
  }
 
 
@@ -142,13 +143,13 @@ a{
      .menu a{
          color: $color-s;
          font-family: 'Poppins', sans-serif;
-         font-size: 20px;
+         font-size: $sz-p;
      
      }
  
      .menu a:hover{
         background-color: transparent;
-        color: plum;             
+        color: $color-t;             
  
      }
 
