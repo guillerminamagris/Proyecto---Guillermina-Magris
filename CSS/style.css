@@ -166,6 +166,9 @@
     grid-template-rows: 50px 450px 450px 50px 450px 450px;
     grid-template-areas: "titulo1" "president1" "president2" "titulo2" "principal1" "principal2";
   }
+  .mainabout {
+    padding: 40px 0px 0px 0px;
+  }
 }
 * {
   margin: 0px;
@@ -398,9 +401,13 @@ ul {
   .titulos2 {
     font-size: 25px;
     text-align: center;
+    padding: 0px 5px 0px 5px;
   }
   .titulo-careers {
     font-size: 20px;
+  }
+  .maincareers {
+    padding: 40px 0px 0px 0px;
   }
 }
 * {
@@ -632,13 +639,45 @@ ul {
     margin: 20px;
     padding: 0px;
   }
+  .firstname {
+    font-size: 15px;
+  }
+  .inputfn {
+    width: 300px;
+  }
+  .lastname {
+    font-size: 15px;
+  }
+  .inputln {
+    width: 300px;
+  }
+  .emailc {
+    font-size: 15px;
+  }
+  .inpute {
+    width: 300px;
+  }
+  .phonec {
+    font-size: 15px;
+  }
+  .inputp {
+    width: 300px;
+  }
+  .question {
+    font-size: 15px;
+  }
+  .inputq {
+    width: 300px;
+  }
+  .div-submit {
+    width: 300px;
+  }
   #grilla_sectioncontact {
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: 200px;
     grid-template-rows: 20px 30px 20px 30px 20px 30px 20px 30px 20px 80px 30px;
     grid-template-areas: "firstn" "inputfn" "lastn" "inputln" "emailc" "inpute" "phonec" "inputp" "question" "inputq" "submit";
-    padding: 20px 50px 20px 50px;
-    margin: 0px 10px 20px;
+    padding: 20px 105px 20px 20px;
   }
   .div-imagen {
     height: 200px;
@@ -795,6 +834,7 @@ ul {
   #index_mainprojects {
     grid-template-columns: 200px 500px;
     grid-template-rows: 30px 30px 30px 30px 30px 30px;
+    padding: 40px 0px 0px 0px;
   }
   .b-residential {
     font-size: 15px;
@@ -822,6 +862,7 @@ ul {
   }
   .parrafos-p {
     font-size: 13px;
+    text-align: justify;
   }
 }
 * {
@@ -915,6 +956,13 @@ ul {
     grid-template-columns: 400px;
     grid-template-rows: 300px 300px 300px 300px 300px 300px;
     grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
+  }
+  .parrafos1 {
+    text-align: justify;
+    padding: 0px 0px 0px 5px;
+  }
+  .sectionindex {
+    padding: 40px 0px 0px 0px;
   }
 }
 

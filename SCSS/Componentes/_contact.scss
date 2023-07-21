@@ -268,9 +268,59 @@
 
     }
 
+    .firstname{
+        font-size:$sz-t4;
+        
+    }
+    
+    .inputfn{
+        width: 300px;
+    }
+    
+    .lastname{
+        font-size:$sz-t4;
+    }
+    
+    .inputln{
+        width: 300px;
+    
+    }
+    
+    
+    .emailc{
+        font-size:$sz-t4;
+    }
+    
+    .inpute{
+        width: 300px;
+    }
+    
+    
+    .phonec{
+        font-size:$sz-t4;
+    }
+    
+    .inputp{
+        width: 300px;
+    }
+    
+    .question{
+        font-size:$sz-t4;
+            
+    }
+    
+    .inputq{
+        width: 300px;
+    }
+    
+    .div-submit{
+        width: 300px;
+        
+    }
+
     #grilla_sectioncontact{
         display: grid;
-        grid-template-columns: 500px;
+        grid-template-columns: 200px;
         grid-template-rows: 20px 30px 20px 30px 20px 30px 20px 30px 20px 80px 30px;
         grid-template-areas: 
         "firstn"
@@ -284,9 +334,12 @@
         "question"
         "inputq"
         "submit";
-        padding: 20px 50px 20px 50px;
-        margin: 0px 10px 20px;
+        padding: 20px 105px 20px 20px;
+        
+
+    
     }
+    
      
     .div-imagen{
         height: 200px;
