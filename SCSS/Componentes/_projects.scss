@@ -1,6 +1,7 @@
 *{
  margin: 0px;
  padding: 0px;
+ box-sizing:border-box;
 }
 
 .imgprojects{
@@ -8,7 +9,8 @@
 }
 
 .b-residential{
- grid-area: bresi;
+ height: 30px;
+ width: 200px;
  background-color: $color-s;
  border: none;
  box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
@@ -21,7 +23,8 @@
 }
 
 .b-landscape{
- grid-area: bland;
+ height: 30px;
+ width: 200px;
  background-color: $color-s;
  border: none;
  box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
@@ -34,7 +37,8 @@
 }
 
 .b-commercial{
- grid-area: bcom;
+ height: 30px;
+ width: 200px;
  background-color: $color-s;
  border: none;
  box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
@@ -47,7 +51,8 @@
 }
 
 .b-interior{
- grid-area: binterior;
+ height: 30px;
+ width: 200px;
  background-color: $color-s;
  border: none;
  box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
@@ -60,7 +65,8 @@
 }
 
 .b-hospi{
- grid-area: bhosp;
+ height: 30px;
+ width: 200px;
  background-color: $color-s;
  border: none;
  box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
@@ -73,7 +79,8 @@
 }
 
 .b-office{
- grid-area: boffice;
+ height: 30px;
+ width: 200px;
  background-color: $color-s;
  border: none;
  box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
@@ -114,20 +121,12 @@
  background-image: url(../IMAGES/projects-fondo.png);
  background-repeat: no-repeat;
  background-size: cover;    
- display: grid;
- grid-template-columns: 300px 500px;
- grid-template-rows: 40px 40px 40px 40px 40px 40px;
- row-gap: 10px;
- grid-template-areas: 
- "bresi"
- "bland"
- "bcom"
- "binterior"
- "bhosp"
- "boffice";
- text-align: left;
- margin: 0px 0px 10px 0px;
- padding: 90px 0px 0px 0px;
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ gap: 20px;
+ justify-content: center;
+ padding: 100px 0px 20px 0px;
 }
 
 .div-projects{
@@ -164,28 +163,7 @@
 @media (max-width: 576px){
 
   #index_mainprojects{
-    grid-template-columns: 200px 500px;
-    grid-template-rows: 30px 30px 30px 30px 30px 30px;
-    padding: 40px 0px 0px 0px;
-  }
-
-  .b-residential{
-    font-size: $sz-t4;
-  }
-  .b-landscape{
-    font-size: $sz-t4;
-  }
-  .b-commercial{
-    font-size: $sz-t4;
-  }    
-  .b-interior{
-    font-size: $sz-t4;
-  } 
-  .b-hospi{
-    font-size: $sz-t4;
-  } 
-  .b-office{
-    font-size: $sz-t4;
+    padding: 50px 0px 20px 0px;
   } 
 
   .titulos3{
@@ -199,8 +177,7 @@
    }
    
    .parrafos-p{
-    font-size: $sz-pm; 
-    text-align: justify;
+    font-size: $sz-t4; 
    
    }
 

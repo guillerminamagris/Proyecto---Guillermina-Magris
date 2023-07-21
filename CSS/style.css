@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .titulo-f {
   grid-area: archiplus;
 }
@@ -64,7 +70,7 @@
 @media (max-width: 576px) {
   .mapa {
     height: 200px;
-    width: 300px;
+    width: 100%;
   }
   .titulo-f {
     font-size: 20px;
@@ -93,6 +99,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .mainabout {
@@ -107,7 +114,7 @@
 
 .imgabout {
   height: 500px;
-  width: 350px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
   background: linear-gradient(right, black, grey);
 }
@@ -148,8 +155,9 @@
 
 #grilla-about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 390px 390px;
   grid-template-rows: 50px 600px 50px 600px;
+  column-gap: 100px;
   grid-template-areas: "titulo1 titulo1" "president1 president2" "titulo2 titulo2" "principal1 principal2";
   justify-content: center;
   align-items: center;
@@ -159,12 +167,16 @@
 @media (max-width: 576px) {
   .imgabout {
     height: 380px;
-    width: 250px;
+    width: 100%;
   }
   #grilla-about {
     grid-template-columns: 1fr;
     grid-template-rows: 50px 450px 450px 50px 450px 450px;
     grid-template-areas: "titulo1" "president1" "president2" "titulo2" "principal1" "principal2";
+  }
+  .parrafos1 {
+    font-size: 15px;
+    text-align: left;
   }
   .mainabout {
     padding: 40px 0px 0px 0px;
@@ -173,6 +185,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -316,6 +329,7 @@ ul {
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .maincareers {
@@ -413,27 +427,28 @@ ul {
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .imagenwp {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 100%;
 }
 
 .imagenmail {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 100%;
 }
 
 .imagenins {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 100%;
 }
 
 .applynow {
   background-color: lightgoldenrodyellow;
   height: 60px;
-  width: 250px;
+  width: 100%;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
   font-family: "Poppins", sans-serif;
@@ -450,7 +465,7 @@ ul {
 }
 
 .div-phone:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .div-iemail {
@@ -462,7 +477,7 @@ ul {
 }
 
 .div-email:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .div-iinst {
@@ -474,25 +489,25 @@ ul {
 }
 
 .div-inst:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 #grilla_maincontact {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 150px 150px 150px;
   grid-template-rows: 150px 80px;
-  column-gap: 20px;
+  column-gap: 300px;
   grid-template-areas: "iphone iemail iinst" "phone email inst";
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 90px 20px 50px 0px;
+  padding: 90px 0px 50px 0px;
 }
 
 .f-contact {
   opacity: 0.3;
   height: 30px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
@@ -507,7 +522,7 @@ ul {
   grid-template-areas: inputfn;
   opacity: 0.3;
   height: 30px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
   color: black;
@@ -524,7 +539,7 @@ ul {
   color: black;
   opacity: 0.3;
   height: 30px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
@@ -539,7 +554,7 @@ ul {
   grid-template-areas: inpute;
   opacity: 0.3;
   height: 30px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
@@ -554,7 +569,7 @@ ul {
   grid-template-areas: inputp;
   opacity: 0.3;
   height: 30px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
@@ -569,7 +584,7 @@ ul {
   grid-template-areas: inputq;
   opacity: 0.3;
   height: 80px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
 }
@@ -578,7 +593,7 @@ ul {
   grid-area: submit;
   background-color: plum;
   height: 30px;
-  width: 500px;
+  width: 100%;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
   font-family: "Poppins", sans-serif;
@@ -592,7 +607,7 @@ ul {
 
 .div-imagen {
   height: 500px;
-  width: 500px;
+  width: 100%;
   grid-area: imagenc;
 }
 
@@ -610,83 +625,65 @@ ul {
 }
 
 @media (max-width: 576px) {
-  .imagenwp {
-    height: 70px;
-    width: 70px;
-  }
-  .imagenmail {
-    height: 70px;
-    width: 70px;
-  }
-  .imagenins {
-    height: 70px;
-    width: 70px;
-  }
-  .applynow {
-    height: 60px;
-    width: 150px;
-    font-weight: 600px;
-    font-size: 13px;
-  }
   #grilla_maincontact {
     display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: 100px 50px 100px 50px 100px 50px;
-    column-gap: 20px;
+    grid-template-columns: 150px;
+    grid-template-rows: 100px 120px 120px 120px 120px 120px;
     grid-template-areas: "iphone" "phone" "iemail" "email" "iinst" "inst";
     justify-content: center;
     align-items: center;
     margin: 20px;
-    padding: 0px;
+    padding: 50px 0px 0px 0px;
   }
   .firstname {
     font-size: 15px;
   }
   .inputfn {
-    width: 300px;
+    width: 100%;
   }
   .lastname {
     font-size: 15px;
   }
   .inputln {
-    width: 300px;
+    width: 100%;
   }
   .emailc {
     font-size: 15px;
   }
   .inpute {
-    width: 300px;
+    width: 100%;
   }
   .phonec {
     font-size: 15px;
   }
   .inputp {
-    width: 300px;
+    width: 100%;
   }
   .question {
     font-size: 15px;
   }
   .inputq {
-    width: 300px;
+    width: 100%;
   }
   .div-submit {
-    width: 300px;
+    width: 100%;
   }
   #grilla_sectioncontact {
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 280px;
     grid-template-rows: 20px 30px 20px 30px 20px 30px 20px 30px 20px 80px 30px;
     grid-template-areas: "firstn" "inputfn" "lastn" "inputln" "emailc" "inpute" "phonec" "inputp" "question" "inputq" "submit";
-    padding: 20px 105px 20px 20px;
+    margin: 0px 5px 20px 5px;
   }
   .div-imagen {
     height: 200px;
-    width: 200px;
+    width: 100%;
   }
 }
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .imgprojects {
@@ -694,7 +691,8 @@ ul {
 }
 
 .b-residential {
-  grid-area: bresi;
+  height: 30px;
+  width: 200px;
   background-color: lightgoldenrodyellow;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
@@ -706,7 +704,8 @@ ul {
 }
 
 .b-landscape {
-  grid-area: bland;
+  height: 30px;
+  width: 200px;
   background-color: lightgoldenrodyellow;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
@@ -718,7 +717,8 @@ ul {
 }
 
 .b-commercial {
-  grid-area: bcom;
+  height: 30px;
+  width: 200px;
   background-color: lightgoldenrodyellow;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
@@ -730,7 +730,8 @@ ul {
 }
 
 .b-interior {
-  grid-area: binterior;
+  height: 30px;
+  width: 200px;
   background-color: lightgoldenrodyellow;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
@@ -742,7 +743,8 @@ ul {
 }
 
 .b-hospi {
-  grid-area: bhosp;
+  height: 30px;
+  width: 200px;
   background-color: lightgoldenrodyellow;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
@@ -754,7 +756,8 @@ ul {
 }
 
 .b-office {
-  grid-area: boffice;
+  height: 30px;
+  width: 200px;
   background-color: lightgoldenrodyellow;
   border: none;
   box-shadow: 1.5px 1.5px 1.5px lightgrey;
@@ -793,14 +796,12 @@ ul {
   background-image: url(../IMAGES/projects-fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  grid-template-columns: 300px 500px;
-  grid-template-rows: 40px 40px 40px 40px 40px 40px;
-  row-gap: 10px;
-  grid-template-areas: "bresi" "bland" "bcom" "binterior" "bhosp" "boffice";
-  text-align: left;
-  margin: 0px 0px 10px 0px;
-  padding: 90px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+  justify-content: center;
+  padding: 100px 0px 20px 0px;
 }
 
 .div-projects {
@@ -832,27 +833,7 @@ ul {
 
 @media (max-width: 576px) {
   #index_mainprojects {
-    grid-template-columns: 200px 500px;
-    grid-template-rows: 30px 30px 30px 30px 30px 30px;
-    padding: 40px 0px 0px 0px;
-  }
-  .b-residential {
-    font-size: 15px;
-  }
-  .b-landscape {
-    font-size: 15px;
-  }
-  .b-commercial {
-    font-size: 15px;
-  }
-  .b-interior {
-    font-size: 15px;
-  }
-  .b-hospi {
-    font-size: 15px;
-  }
-  .b-office {
-    font-size: 15px;
+    padding: 50px 0px 20px 0px;
   }
   .titulos3 {
     font-size: 20px;
@@ -861,13 +842,13 @@ ul {
     font-size: 15px;
   }
   .parrafos-p {
-    font-size: 13px;
-    text-align: justify;
+    font-size: 15px;
   }
 }
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .sectionindex {
@@ -877,42 +858,42 @@ ul {
 .proyecto1 {
   grid-area: proyecto1;
   height: 300px;
-  width: 400px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
 .proyecto2 {
   grid-area: proyecto2;
   height: 300px;
-  width: 400px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
 .proyecto3 {
   grid-area: proyecto3;
   height: 300px;
-  width: 400px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
 .proyecto4 {
   grid-area: proyecto4;
   height: 300px;
-  width: 400px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
 .proyecto5 {
   grid-area: proyecto5;
   height: 300px;
-  width: 400px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
 .proyecto6 {
   grid-area: proyecto6;
   height: 300px;
-  width: 400px;
+  width: 100%;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
@@ -958,7 +939,6 @@ ul {
     grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
   }
   .parrafos1 {
-    text-align: justify;
     padding: 0px 0px 0px 5px;
   }
   .sectionindex {

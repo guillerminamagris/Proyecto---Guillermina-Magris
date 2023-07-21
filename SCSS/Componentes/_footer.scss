@@ -1,3 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+  }
+
+
+
 .titulo-f{
     grid-area: archiplus;
 }
@@ -73,7 +81,7 @@
 
     .mapa{
         height: 200px;
-        width: 300px;
+        width: 100%;
     }
 
     .titulo-f{

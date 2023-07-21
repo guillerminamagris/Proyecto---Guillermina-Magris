@@ -1,28 +1,29 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing:border-box;
   }
 
 
 .imagenwp{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 100%;
 }
   
 .imagenmail{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 100%;
 }
   
 .imagenins{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 100%;
 }
   
 .applynow{
     background-color: $color-s;
     height: 60px;
-    width: 250px;
+    width: 100%;
     border: none;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
     font-family: 'Poppins', sans-serif; 
@@ -41,7 +42,7 @@
 }
 
 .div-phone:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
   
 .div-iemail{
@@ -53,7 +54,7 @@
 }
 
 .div-email:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
   
   
@@ -66,29 +67,29 @@
 }
 
 .div-inst:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
   
   
 #grilla_maincontact{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 150px 150px 150px;
     grid-template-rows: 150px 80px;
-    column-gap: 20px;
+    column-gap: 300px;
     grid-template-areas: 
     "iphone iemail iinst"
     "phone email inst";
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 90px 20px 50px 0px;
+    padding: 90px 0px 50px 0px;
     
 }
 
 .f-contact{
     opacity: 0.3;
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
 }
@@ -104,7 +105,7 @@
     grid-template-areas: inputfn;
     opacity: 0.3;
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
     color: black;
@@ -121,7 +122,7 @@
     color: black;
     opacity: 0.3;
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
 
@@ -138,7 +139,7 @@
     grid-template-areas: inpute;
     opacity: 0.3;
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
 }
@@ -154,7 +155,7 @@
     grid-template-areas: inputp;
     opacity: 0.3;
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
 }
@@ -170,7 +171,7 @@
     grid-template-areas: inputq;
     opacity: 0.3;
     height: 80px;
-    width: 500px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
 }
@@ -179,7 +180,7 @@
     grid-area: submit;
     background-color: $color-t;
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: none;
     box-shadow: 1.5px 1.5px 1.5px $color-sh-2;
     font-family: 'Poppins', sans-serif; 
@@ -194,7 +195,7 @@
 
 .div-imagen{
     height: 500px;
-    width: 500px;
+    width: 100%;
     grid-area: imagenc;
 }
 
@@ -226,34 +227,12 @@
   
 
 @media (max-width: 576px) {
-    .imagenwp{
-        height: 70px;
-        width: 70px;
-    }
-      
-    .imagenmail{
-        height: 70px;
-        width: 70px;
-    }
-      
-    .imagenins{
-        height: 70px;
-        width: 70px;
-    }
-
-    .applynow{
-        height: 60px;
-        width: 150px;
-        font-weight: 600px;
-        font-size: 13px;
-        
-    }
+  
 
     #grilla_maincontact{
     display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: 100px 50px 100px 50px 100px 50px;
-    column-gap: 20px;
+    grid-template-columns: 150px;
+    grid-template-rows: 100px 120px 120px 120px 120px 120px;
     grid-template-areas:
     "iphone"
     "phone"
@@ -264,7 +243,7 @@
     justify-content: center;
     align-items: center;
     margin: 20px;
-    padding: 0px;
+    padding: 50px 0px 0px 0px;
 
     }
 
@@ -274,7 +253,7 @@
     }
     
     .inputfn{
-        width: 300px;
+        width: 100%;
     }
     
     .lastname{
@@ -282,7 +261,7 @@
     }
     
     .inputln{
-        width: 300px;
+        width: 100%;
     
     }
     
@@ -292,7 +271,7 @@
     }
     
     .inpute{
-        width: 300px;
+        width: 100%;
     }
     
     
@@ -301,7 +280,7 @@
     }
     
     .inputp{
-        width: 300px;
+        width: 100%;
     }
     
     .question{
@@ -310,17 +289,17 @@
     }
     
     .inputq{
-        width: 300px;
+        width: 100%;
     }
     
     .div-submit{
-        width: 300px;
+        width: 100%;
         
     }
 
     #grilla_sectioncontact{
         display: grid;
-        grid-template-columns: 200px;
+        grid-template-columns: 280px;
         grid-template-rows: 20px 30px 20px 30px 20px 30px 20px 30px 20px 80px 30px;
         grid-template-areas: 
         "firstn"
@@ -334,8 +313,9 @@
         "question"
         "inputq"
         "submit";
-        padding: 20px 105px 20px 20px;
+        margin: 0px 5px 20px 5px;
         
+          
 
     
     }
@@ -343,7 +323,7 @@
      
     .div-imagen{
         height: 200px;
-        width: 200px;
+        width: 100%;
        
     }
     

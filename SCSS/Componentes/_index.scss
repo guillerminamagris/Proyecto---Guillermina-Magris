@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing:border-box;
 }
 
 
@@ -13,47 +14,47 @@
 .proyecto1{
     grid-area: proyecto1;
     height: 300px;
-    width: 400px;
+    width: 100%;;
     box-shadow: 4px 4px 4px $color-sh-2;
 }
 
 .proyecto2{
     grid-area: proyecto2;
     height: 300px;
-    width: 400px;
+    width: 100%;;
     box-shadow: 4px 4px 4px $color-sh-2;
 }
 
 .proyecto3{
     grid-area: proyecto3;
     height: 300px;
-    width: 400px;
+    width: 100%;;
     box-shadow: 4px 4px 4px $color-sh-2;
 }
 
 .proyecto4{
     grid-area: proyecto4;
     height: 300px;
-    width: 400px;
+    width: 100%;;
     box-shadow: 4px 4px 4px $color-sh-2;
 }
 
 .proyecto5{
     grid-area: proyecto5;
     height: 300px;
-    width: 400px;
+    width: 100%;;
     box-shadow: 4px 4px 4px $color-sh-2;
 }
 
 .proyecto6{
     grid-area: proyecto6;
     height: 300px;
-    width: 400px;
+    width: 100%;;
     box-shadow: 4px 4px 4px $color-sh-2;
 }
 
 .proyecto1:hover{
-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .proyecto2:hover{
@@ -106,7 +107,6 @@ transform: scale(1.1);
     }
 
     .parrafos1{
-        text-align: justify;
         padding: 0px 0px 0px 5px;
     }
 
